@@ -18,9 +18,11 @@ endif
 if version < 600
   so <sfile>:p:h/jinja.vim
   so <sfile>:p:h/html.vim
+  so <sfile>:p:h/html/html5.vim
 else
   runtime! syntax/jinja.vim
   runtime! syntax/html.vim
+  runtime! syntax/html/html5.vim
   unlet b:current_syntax
 endif
 
